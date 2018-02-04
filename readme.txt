@@ -2,7 +2,10 @@ icewx教程
 
 1. 申请微信公众号测试账号.
    申请地址:
-   https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1455872297
+    微信公众号测试账号申请地址:
+    https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login
+   微信开发文档地址:
+   https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1472017492_58YV5
 2.新建一个web工程
     在src文件夹下新建一个wx.properties,设置编码为UTF-8.
     wx.properties有如下配置:
