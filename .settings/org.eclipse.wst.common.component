@@ -5,6 +5,9 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
+        <dependent-module archiveName="icewx-1.0.2.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/icewx/icewx">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="icwx-demo"/>
         <property name="java-output-path" value="/icwx-demo/target/classes"/>
     </wb-module>

@@ -12,6 +12,7 @@ import com.iceyyy.nongli.NongLi;
 import cn.hutool.core.convert.Convert;
 import cn.hutool.core.util.NumberUtil;
 import cn.hutool.core.util.ReUtil;
+import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.Log;
 import cn.hutool.log.LogFactory;
 import cn.hutool.script.ScriptRuntimeException;
@@ -42,6 +43,22 @@ public class MyText implements TextProcessor {
         }
         if (message.contains("农历")) {
             String dateStr = message.replace("农历", "");
+            if (MyUtil.isDate(dateStr)) {
+                String nongli = NongLi.getDate(dateStr);
+                MessageSender.send(nongli);
+                return null;
+            }
+        }
+        if (message.contains("nongli")) {
+            String dateStr = message.replace("nongli", "");
+            if (MyUtil.isDate(dateStr)) {
+                String nongli = NongLi.getDate(dateStr);
+                MessageSender.send(nongli);
+                return null;
+            }
+        }
+        if (message.startsWith("nl")) {
+            String dateStr = StrUtil.removePrefix(message, "nl");
             if (MyUtil.isDate(dateStr)) {
                 String nongli = NongLi.getDate(dateStr);
                 MessageSender.send(nongli);

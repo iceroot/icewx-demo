@@ -27,17 +27,17 @@ icewx教程
     </servlet-mapping>
 4. 为避免访问首页报404错误,建议在WebContent下添加一个index.jsp
 5. 在lib下添加如下jar文件:
-   icewx-1.0.1.jar
-   hutool-all-4.0.4.jar
+   icewx-1.0.2.jar
+   hutool-all-4.0.5.jar
    log4j-1.2.17.jar
-    icewx-1.0.1.jar的下载地址为:
-    http://central.maven.org/maven2/com/icexxx/icewx/1.0.1/icewx-1.0.1.jar
+    icewx-1.0.2.jar的下载地址为:
+    http://central.maven.org/maven2/com/icexxx/icewx/1.0.1/icewx-1.0.2.jar
    如果是maven,只需要引入:
    <!-- https://mvnrepository.com/artifact/com.icexxx/icewx -->
 <dependency>
     <groupId>com.icexxx</groupId>
     <artifactId>icewx</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 </dependency>
 
 
